@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="252.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.luisvaquin.main.FXMLDocumentController">
+    <children>
+      <Pane layoutY="5.0" prefHeight="532.0" prefWidth="356.0">
+         <children>
+            <ImageView fitHeight="612.0" fitWidth="356.0" layoutY="-73.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Fondo.png" />
+               </image>
+            </ImageView>
+            <GridPane fx:id="btnResta" layoutX="30.0" layoutY="121.0" prefHeight="338.0" prefWidth="296.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnPorciento" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="\%">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnC" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="C" GridPane.columnIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="btnCE" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="CE" GridPane.columnIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnUnoX" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="1/x" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnCuadrado" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="X²" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnSiete" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="7" GridPane.rowIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnOcho" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnNueve" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnMult" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="x" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnCuatro" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="4" GridPane.rowIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnUno" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="1" GridPane.rowIndex="4">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnMasMenos" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="+/-" GridPane.rowIndex="5">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnCinco" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnDos" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnCero" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnSeis" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnTres" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnPunto" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="." GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="btnIgual" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnSuma" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnMenos" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="btnDivision" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnRaiz" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;" text="√" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnD" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.0" prefHeight="51.0" prefWidth="59.0" style="-fx-background-color: #808080;" GridPane.columnIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="btnApagado" disable="true" fitHeight="50.0" fitWidth="61.0" opacity="0.74" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <image>
+                        <Image url="@../images/LogoApagar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <TextField fx:id="txtPantalla" alignment="BOTTOM_RIGHT" layoutX="22.0" layoutY="71.0" mouseTransparent="true" prefHeight="43.0" prefWidth="296.0">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </TextField>
+            <MenuBar layoutX="-3.0" layoutY="-6.0" prefHeight="22.0" style="-fx-background-color: negro;">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </MenuBar>
+            <ImageView fitHeight="43.0" fitWidth="47.0" layoutX="282.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Logokinal.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnApagado" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.0" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #808080;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="196.0" layoutY="32.0" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
